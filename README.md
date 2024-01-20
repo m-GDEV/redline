@@ -1,2 +1,2 @@
 # redline
-Effectively manage your assignments
+Effectively manage your assignments using highly specialized algorithms
