@@ -15,19 +15,50 @@ val Outfit = FontFamily(
 )
 
 
-
-
-// Set of Material typography styles to start with
+// Custom defintions of typography options
 val Typography = Typography(
+    // Display
+    displayLarge = TextStyle(
+        fontFamily = Outfit,
+        fontWeight = FontWeight.Bold,
+        fontSize = 40.sp,
+        lineHeight = 30.sp,
+        letterSpacing = 1.sp
+    ),
+    displayMedium = TextStyle(
+        fontFamily = Outfit,
+        fontWeight = FontWeight.Bold,
+        fontSize = 30.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.75.sp
+    ),
+    displaySmall = TextStyle(
+        fontFamily = Outfit,
+        fontWeight = FontWeight.Medium,
+        fontSize = 30.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+    // Body
     bodyLarge = TextStyle(
+        fontFamily = Outfit,
+        fontWeight = FontWeight.Normal,
+        fontSize = 18.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = Outfit,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+    bodySmall = TextStyle(
         fontFamily = Outfit,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     )
-    // Other default text styles to override
-
-    //Add text styles for medium and bold
-
 )

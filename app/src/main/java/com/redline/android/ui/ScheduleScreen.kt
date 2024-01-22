@@ -1,10 +1,13 @@
-package com.redline.android
+package com.redline.android.ui
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.redline.android.ui.HomeTabs
+import androidx.compose.ui.text.style.TextAlign
+import com.redline.android.AppScreen
+import com.redline.android.R
 
 @Composable
 fun ScheduleScreen(
@@ -13,9 +16,7 @@ fun ScheduleScreen(
 ) {
     Column {
         HomeTabs(onScreenChange = onScreenChange)
-        Text(
-            text = "Schedule"
-        )
+        TabHeader(tabNameId = R.string.schedule_tab)
     }
 
 }

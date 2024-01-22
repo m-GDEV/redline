@@ -6,11 +6,13 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.redline.android.AppScreen
 import com.redline.android.R
@@ -37,7 +39,7 @@ fun HomeTabs(modifier: Modifier = Modifier, onScreenChange: (screen: AppScreen) 
         }
         Button(
             onClick = {
-                Log.d("NAVIGATIOM_", "Navigating to schedule from button")
+//                Log.d("NAVIGATIOM_", "Navigating to schedule from button")
                 onScreenChange(AppScreen.Schedule)
             }
         ) {
@@ -46,5 +48,17 @@ fun HomeTabs(modifier: Modifier = Modifier, onScreenChange: (screen: AppScreen) 
             )
         }
     }
+}
+
+@Composable
+fun TabHeader(tabNameId: Int) {
+    Text(
+        text = stringResource(id = tabNameId),
+        textAlign = TextAlign.Center,
+        style = MaterialTheme.typography.displayLarge,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 15.dp)
+    )
 }
 
