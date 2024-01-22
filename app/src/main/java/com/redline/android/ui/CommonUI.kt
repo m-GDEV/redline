@@ -27,7 +27,7 @@ fun HomeTabs(modifier: Modifier = Modifier, onScreenChange: (screen: AppScreen) 
     ) {
         Button(
             onClick = {
-                Log.d("NAVIGATIOM_", "Navigating to assignments from button")
+                Log.d("NAVIGATIOM__", "Navigating to assignments from button")
                 onScreenChange(AppScreen.Assignments)
             }
         ) {
