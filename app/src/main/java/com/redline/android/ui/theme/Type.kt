@@ -34,7 +34,7 @@ val Typography = Typography(
     ),
     displaySmall = TextStyle(
         fontFamily = Outfit,
-        fontWeight = FontWeight.Medium,
+        fontWeight = FontWeight.Bold,
         fontSize = 30.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
@@ -42,15 +42,15 @@ val Typography = Typography(
     // Body
     bodyLarge = TextStyle(
         fontFamily = Outfit,
-        fontWeight = FontWeight.Normal,
-        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        fontSize = 22.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
     bodyMedium = TextStyle(
         fontFamily = Outfit,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
+        fontSize = 18.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
