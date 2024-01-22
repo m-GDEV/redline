@@ -8,8 +8,8 @@
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/mnt/FILEZ/Files/Documents/code/GITCLONE/my-stuff/redline" />
+            <option value="/mnt/FILEZ/Files/Documents/code/GITCLONE/my-stuff/redline/app" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

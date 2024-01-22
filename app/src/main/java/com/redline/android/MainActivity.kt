@@ -20,24 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             RedlineTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Main()
-                }
+                    RedlineApp()
             }
         }
     }
 }
 
-@Composable
-fun Main(modifier: Modifier = Modifier) {
-    Column(
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        HomeTabs()
-    }
-}
 
