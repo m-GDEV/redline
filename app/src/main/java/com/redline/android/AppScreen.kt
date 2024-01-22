@@ -51,8 +51,10 @@ fun RedlineApp(
                         .fillMaxSize()
                         .padding(10.dp),
                         onScreenChange = { screen ->
-                            Log.d("NAVIGATIOM", "$screen")
-                            navController.navigate(screen.name)
+//                            Log.d("NAVIGATIOM", "$screen")
+                            if (navController.currentDestination?.route != screen.name) {
+                                navController.navigate(screen.name)
+                            }
                         })
                 }
 
@@ -61,14 +63,18 @@ fun RedlineApp(
                     ScheduleScreen(modifier = Modifier
                         .fillMaxSize()
                         .padding(10.dp),
-                        onScreenChange = {
-                            navController.navigate(AppScreen.Assignments.name)
+                        onScreenChange = { screen ->
+                            if (navController.currentDestination?.route != screen.name) {
+                                navController.navigate(screen.name)
+                            }
                         })
                 }
             }
         }
     }
 }
+
+
 
 enum class AppScreen() {
     Assignments, Schedule
