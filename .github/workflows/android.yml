@@ -31,7 +31,9 @@ jobs:
     - name: Build Release APK
       run: |
         ./gradlew assembleRelease
-        jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore redline-release-key.jks -storepass ${{ secrets.REDLINE_RELEASE_KEY_SECRET }} app/build/outputs/apk/release/app-release-unsigned.apk alias_name
+        # jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore redline-release-key.jks -storepass ${{ secrets.REDLINE_RELEASE_KEY_SECRET }} app/build/outputs/apk/release/app-release-unsigned.apk alias_name
+        # arg immediately after --out is outfile. after that is input file.
+        apksigner sign --ks redline-release-key.jks --out ./app/build/outputs/apk/release/app-release-signed.apk ./app/build/outputs/apk/release/app-release-unsigned.apk
 
     - name: Upload Release APK
       uses: actions/upload-artifact@v3
