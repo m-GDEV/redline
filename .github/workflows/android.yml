@@ -29,8 +29,9 @@ jobs:
       run: ./gradlew build
 
     - name: Build Release APK
-      run: ./gradlew assembleRelease
-           jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore redline-release-key.jks app/build/outputs/apk/release/app-release-unsigned.apk alias_name
+      run: |
+        ./gradlew assembleRelease
+        jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore redline-release-key.jks app/build/outputs/apk/release/app-release-unsigned.apk alias_name
 
     - name: Upload Release APK
       uses: actions/upload-artifact@v3
