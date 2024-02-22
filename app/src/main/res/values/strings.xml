@@ -2,4 +2,5 @@
     <string name="app_name">Redline</string>
     <string name="assignments_tab">Assignments</string>
     <string name="schedule_tab">Schedule</string>
+    <string name="redline">Redline</string>
 </resources>
