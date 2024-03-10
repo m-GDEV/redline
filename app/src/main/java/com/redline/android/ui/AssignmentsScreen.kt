@@ -19,7 +19,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.redline.android.AppScreen
 import com.redline.android.R
 import com.redline.android.model.Assignment
 import com.redline.android.model.Course
@@ -29,11 +28,9 @@ import java.util.Date
 
 @Composable
 fun AssignmentsScreen(
-    modifier: Modifier = Modifier, onScreenChange: (screen: AppScreen) -> Unit
+    modifier: Modifier = Modifier
 ) {
     Column {
-        HomeTabs(onScreenChange = onScreenChange)
-        TabHeader(tabNameId = R.string.assignments_tab)
         CourseSection(
             givenCourse = Course(
                 "CIS*3490", CourseDifficulty.Medium, CoursePriority.Medium, listOf(

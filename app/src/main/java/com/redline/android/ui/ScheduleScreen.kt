@@ -11,12 +11,12 @@ import com.redline.android.R
 
 @Composable
 fun ScheduleScreen(
-    modifier: Modifier = Modifier,
-    onScreenChange: (screen: AppScreen) -> Unit
+    modifier: Modifier = Modifier
 ) {
     Column {
-        HomeTabs(onScreenChange = onScreenChange)
-        TabHeader(tabNameId = R.string.schedule_tab)
+        Text(
+            text = "hello schedule"
+        )
     }
 
 }

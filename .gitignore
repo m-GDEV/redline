@@ -14,3 +14,6 @@
 .cxx
 local.properties
 /app/release
+
+# My stuff
+.redline-app-ideas.autosave.xopp
