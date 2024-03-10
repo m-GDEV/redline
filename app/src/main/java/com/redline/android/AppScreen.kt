@@ -99,12 +99,14 @@ fun RedlineApp(
                         1 -> ScheduleScreen()
                     }
                 }
+
+                LaunchedEffect(pagerState.currentPage) {
+                    tabIndex = pagerState.currentPage
+                }
             }
 
 
-            LaunchedEffect(pagerState.currentPage) {
-                tabIndex = pagerState.currentPage
-            }
+
         }
     }
 }
