@@ -72,4 +72,6 @@ dependencies {
     val nav_version = "2.7.6"
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
+    // Custom calendar library
+    implementation("com.kizitonwose.calendar:compose:2.5.0")
 }

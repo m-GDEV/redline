@@ -4,6 +4,8 @@ import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
@@ -30,7 +32,9 @@ import java.util.Date
 fun AssignmentsScreen(
     modifier: Modifier = Modifier
 ) {
-    Column {
+    Column (
+        modifier = Modifier.fillMaxHeight()
+    ){
         CourseSection(
             givenCourse = Course(
                 "CIS*3490", CourseDifficulty.Medium, CoursePriority.Medium, listOf(
